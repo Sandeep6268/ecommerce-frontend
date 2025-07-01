@@ -1,0 +1,45 @@
+/* Hero.css */
+#zu-carousel-section {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-cell:hover img {
+  transform: scale(1.02);
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #f8f9fa !important;
+}
+.hero-bottom{
+    background: #9b0002;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.hero-bottom h3{
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600;
+    font-style: normal;
+}
+.hero-bottom h2{
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+}
+
+

@@ -1,0 +1,153 @@
+.Footer {
+  background-color: #b8181c;
+  padding: 50px 0 20px;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.Footer__Inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.Footer__Block {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.Footer__Title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+/* Social Icons */
+.Footer__Social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.HorizontalList__Item {
+  margin-right: 15px;
+}
+
+.Icon-Wrapper--clickable {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Icon {
+  width: 16px;
+  height: 16px;
+  fill: whitesmoke;
+  transition: fill 0.2s ease-in-out;
+}
+
+.Link--primary:hover .Icon {
+  fill: #dcd2d2;
+}
+
+/* Links */
+.Linklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Linklist__Item {
+  margin-bottom: 12px;
+}
+
+.Link {
+  color: whitesmoke !important;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.Link--primary:hover {
+  color: #666;
+}
+
+/* Newsletter Form */
+.Footer__Content {
+  margin-bottom: 15px;
+}
+
+.Form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Form__Input {
+  width: 100%;
+  padding: 10px 15px;
+  background: transparent;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  font-size: 12px;
+}
+.Form__Input::placeholder{
+    color: whitesmoke;
+}
+
+.Form__Submit {
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.Form__Submit:hover {
+  background-color: #333;
+  color: whitesmoke;
+}
+
+/* Footer Bottom */
+.Footer__Aside {
+  width: 100%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.Footer__Copyright {
+  margin-bottom: 15px;
+}
+
+.Footer__StoreName {
+  color: #999;
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Footer__Block {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer__Block {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,263 @@
+/* Cart.css */
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  border-radius: 4px;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+.cart-title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #000;
+  text-align: left;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+  font-weight: 500;
+  color: #666;
+}
+
+.cart-header div:nth-child(2) {
+  text-align: center;
+}
+
+.cart-header div:nth-child(3) {
+  text-align: right;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 30px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 20px 0;
+  border-bottom: 1px solid #e1e1e1;
+  align-items: center;
+}
+
+.item-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.item-image-container {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 5px 0;
+  color: #000;
+}
+
+.item-variant {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+
+.item-price {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+
+.quantity-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.quantity-controls button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.price-section {
+  font-size: 16px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.order-note {
+  margin: 30px 0;
+}
+
+.order-note h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.order-note textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.total-section {
+  text-align: right;
+}
+
+.total-amount {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.shipping-note {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #000;
+  color: white !important;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.empty-cart p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.continue-shopping {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .cart-header {
+    display: none;
+  }
+  
+  .cart-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .quantity-section {
+    align-items: flex-start;
+  }
+  
+  .price-section {
+    text-align: left;
+    padding-right: 0;
+  }
+  
+  .cart-container {
+    padding: 15px;
+  }
+}
+
+/* Add to your Cart.css */
+.item-variant {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.item-variant:first-of-type {
+  margin-top: 8px;
+}
+
+/* Update the item-details to accommodate size */
+.item-details {
+  flex: 1;
+  padding-left: 15px;
+}
+
+/* Rest of your existing CSS... */

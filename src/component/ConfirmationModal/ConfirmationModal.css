@@ -1,0 +1,139 @@
+/* components/ConfirmationModal/ConfirmationModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1036;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+  animation: modalFadeIn 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #f8f9fa, white);
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.modal-body {
+  padding: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.modal-footer {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid #eee;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.confirm-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: white;
+  border: none;
+  background: var(--confirm-color, #ff4444);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Success modal specific styles */
+.confirm-btn.success {
+  --confirm-color: #4CAF50;
+  background: linear-gradient(135deg, #4CAF50, #3e8e41);
+}
+
+/* Danger modal specific styles */
+.confirm-btn.danger {
+  --confirm-color: #ff4444;
+  background: linear-gradient(135deg, #ff4444, #cc0000);
+}
+
+/* Animation for closing */
+.modal-container.closing {
+  animation: modalFadeOut 0.3s ease-in;
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Success modal specific styles */
+.confirm-btn.success {
+  background: linear-gradient(135deg, #4CAF50, #3e8e41);
+  box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+}
+
+.confirm-btn.success:hover {
+  background: linear-gradient(135deg, #3e8e41, #2e7d32);
+}
+
+/* Login success header */
+.modal-header.success {
+  background: linear-gradient(135deg, #f1f8e9, white);
+  border-left: 4px solid #4CAF50;
+}
