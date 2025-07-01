@@ -27,7 +27,7 @@ const App = () => {
   return (
     <>
     
-    <BrowserRouter basename="/" >
+    <BrowserRouter >
     
     <Routes>
 
